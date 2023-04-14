@@ -6,7 +6,7 @@ WS_FILE = os.path.join(os.path.dirname(__file__), "websocket.html")
 
 
 async def wshandler(request: web.Request):
-    resp = web.WebSocketResponse()
+    resp = web.WebSocketResponse(heartbeat=5)
     available = resp.can_prepare(request)
     if not available:
         with open(WS_FILE, "rb") as fp:
