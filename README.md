@@ -6,7 +6,7 @@ venv\scripts\activate.bat
 On Unix or MacOS, run: (source venv/bin/activate)
 
 В папку проекта клонируем репозиторий:
-git clone 
+git clone https://github.com/KAndreyV/F9.6.git
 
 Затем инсталлируем необходимые для работы проекта пакеты:
 pip install -r requirements.txt
